@@ -7,11 +7,13 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const cairo = Cairo({
   variable: "--font-cairo",
   subsets: ["arabic", "latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -28,10 +30,9 @@ export default function RootLayout({
     <html
       lang="en"
       dir="ltr"
-      suppressHydrationWarning
       className={`${inter.variable} ${cairo.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100">
+      <body className="min-h-full">
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -8,7 +8,6 @@ import {
   ServiceItem,
   SkillItem,
 } from "@/types";
-import { label } from "framer-motion/client";
 
 interface LocaleContent {
   dir: "ltr" | "rtl";

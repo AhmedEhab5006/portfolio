@@ -1,5 +1,4 @@
 export type Language = "en" | "ar";
-export type Theme = "light" | "dark";
 
 export interface NavItem {
   id: string;
@@ -32,15 +31,13 @@ export interface ProjectItem {
   tech: string[];
 }
 
-
 export interface Certification {
   title: string;
   issuer: string;
 }
 
-
 export interface Platform {
-  label:string,
-  href:string,
-  image:string,  
+  label: string;
+  href: string;
+  image: string;
 }
